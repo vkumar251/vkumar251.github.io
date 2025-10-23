@@ -1,0 +1,40 @@
+.animate {
+    animation-name: rainbow-animation;
+    animation-duration: 5s;
+}
+.animate-2 {
+    animation-name: animate-font;
+    animation-duration: 5s;
+}
+
+@keyframes rainbow-animation
+{
+    0% {background-color: #F8312F;}
+    25% {background-color: #FF6347;}
+    50% {background-color: #FF8C00;}
+    75% {background-color: #FFD700;}
+    100% {background-color: #2bff00;}
+}
+@keyframes animate-font
+{
+    0% {font-size: 20px;}
+    25% {font-size: 30px;}
+    50% {font-size: 40px;}
+    75% {font-size: 30px;}
+    100% {font-size: 20px;}
+}
+
+
+
+
+
+/* xray lines */
+.xray-1 {border: 3px dashed black;}
+.xray-2 {border: 2px dashed black;}
+.xray-3 {border: 1px dashed black;}
+
+
+/* DEVELOPER NOTES */
+
+/* #f8f9fa = Bootstrap colour, 'light' */
+/* #212529 = Bootstrap colour, 'dark' */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Body Mass Index | Calculator-UX</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fonts.css">
+    </head>
+    <body class="sansation-regular">
+        <!-- navigation -->
+        <header id="header" class="bg-dark text-light py-2">
+            <nav class="d-flex justify-content-around align-items-center">
+                <div id="logo" class="fs-3 fw-bold pointer">
+                    <span class="text-warning"><i class="fa-solid fa-calculator"></i></span>
+                    <span class="text-warning">C</span><span class="text-warning">a</span><span class="text-warning">l</span><!--
+                 --><span class="text-warning">c</span><span class="text-warning">u</span><span class="text-warning">l</span><!--
+                 --><span class="text-warning">a</span><span class="text-warning">t</span><span class="text-warning">o</span><!--
+                 --><span class="text-warning">r</span>
+                </div>
+                <div class="nav-items-container d-flex fs-5">
+                    <!-- nav items -->
+                    <div class="nav-items"><a href="index.html">Home</a></div>
+                    <div class="nav-items"><a href="calculator-arithmetics.html">Arithmetics</a></div>
+                    <div class="nav-items"><a href="calculator-bmi.html">BMI</a></div>
+
+                    <!-- shapes dropdown -->
+                    <button class="nav-items nav-button-access dropdown-toggle pointer" data-bs-toggle="dropdown" aria-expanded="false" id="shapes-menu">
+                        Shapes
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="calculator-shapes-2d.html">2D Shapes (Area / Perimeter)</a></li>
+                        <li><a class="dropdown-item text-light" href="calculator-shapes-3d.html">3D Shapes (Volume)</a></li>
+                    </ul>
+
+                    <!-- accessibility dropdown -->
+                    <button class="nav-button-access fs-5 fw-bold dropdown-toggle pointer" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-universal-access"></i>
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light pointer" onClick="toggleLightMode()"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
+                        <li><a class="dropdown-item text-light pointer" onClick="toggleDarkMode()"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
+                    </ul>
+
+                    <!-- sidebar button -->
+                    <button onClick="openSidebar()" class="nav-button fs-5 fw-bold pointer" id="sidebar-button">
+                        <i class="fa-solid fa-bars menu-button"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- sidebar -->
+        <section id="sidebar">
+            <div class="text-center"><a class="text-decoration-none" href="index.html">Home</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="calculator-arithmetics.html">Arithmetics</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="calculator-shapes-2d.html">2D Shapes</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="calculator-shapes-3d.html">3D Shapes</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="calculator-bmi.html">BMI</a></div>
+        </section>
+        
+        <!-- sidebar pane (for closing) -->
+        <section id="sidebar-pane" onClick="closeSidebar()"></section>
+        
+        <!-- main content -->
+        <main id="main" class="bg-light text-dark">
+            Text
+        </main>
+
+        <!-- footer -->
+        <footer id="footer" class="bg-dark py-2">
+            <div class="nav-items-container d-flex justify-content-center fs-5">
+                <div class="nav-items-footer"><a href="https://github.com/vkumar251/Calculator-UX" target="_blank"><i class="fa-solid fa-code"></i></a></div>
+                <div class="nav-items-footer"><a href="https://getbootstrap.com" target="_blank"><i class="fa-brands fa-bootstrap"></i></a></div>
+            </div>
+            <div id="footer-copyright" class="fs-5 text-center text-info">&copy; 2022 Calculator-UX Project</div>
+            <div id="footer-credits" class="fs-5 text-center text-success">Built with Bootstrap 5</div>
+        </footer>
+        
+        <!-- import scripts -->
+        <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
+        <script src="js/queries.js"></script>
+        <script type="module" src="js/access.js"></script>
+        <script type="module" src="js/themes.js"></script>
+    </body>
+</html>

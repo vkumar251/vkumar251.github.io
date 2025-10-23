@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Archive | Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- navigation -->
+        <header id="header" class="bg-dark text-light py-2">
+            <nav class="d-flex justify-content-around align-items-center">
+                <div id="logo" class="fs-3 fw-bold text-warning pointer">
+                    <i class="fa-solid fa-calculator"></i> Calculator
+                </div>
+                <div class="nav-items-container d-flex fs-5">
+                    <!-- nav items -->
+                    <div class="nav-items"><a href="#">Home</a></div>
+                    <div class="nav-items"><a href="#">Arithmetics</a></div>
+                    <div class="nav-items"><a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Shapes</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light" href="#">2D Shapes (Area / Perimeter)</a></li>
+                            <li><a class="dropdown-item text-light" href="#">3D Shapes (Volume)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-items"><a href="#">BMI</a></div>
+                    
+                    <!-- accessibility button -->
+                    <button onClick="" class="nav-button-access fs-5 fw-bold dropdown-toggle pointer" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-universal-access"></i>
+                    </button>
+                    <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item text-light pointer" onClick="toggleLightMode()"><i class="fa-solid fa-sun"></i> Light Mode</a></li>
+                    <li><a class="dropdown-item text-light pointer" onClick="toggleDarkMode()"><i class="fa-solid fa-moon"></i> Dark Mode</a></li>
+                    </ul>
+
+                    <!-- sidebar button -->
+                    <button onClick="openSidebar()" class="nav-button fs-5 fw-bold pointer">
+                        <i class="fa-solid fa-bars menu-button"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- sidebar -->
+        <section id="sidebar">
+            <div class="text-center"><a class="text-decoration-none" href="#">Home</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="#">Arithmetics</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="#">2D Shapes</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="#">3D Shapes</a></div>
+            <div class="text-center"><a class="text-decoration-none" href="#">BMI</a></div>
+        </section>
+        
+        <!-- sidebar pane (for closing) -->
+        <section id="sidebar-pane" onClick="closeSidebar()"></section>
+        
+        <!-- main content -->
+        <main id="main" class="bg-light text-dark">
+
+            <div class="xray-1 bg-secondary">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="xray-2 col-sm-12 col-md-6 col-lg-4 col-xl-3">Text</div>
+                        <div class="xray-2 col-sm-12 col-md-6 col-lg-4 col-xl-3">Text</div>
+                        <div class="xray-2 col-sm-12 col-md-6 col-lg-4 col-xl-3">Text</div>
+                        <div class="xray-2 col-sm-12 col-md-6 col-lg-4 col-xl-3">Text</div>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        
+        <!-- footer -->
+        <footer id="footer" class="bg-dark py-2">
+            <div id="footer-copyright" class="fs-5 text-center text-info">&copy; 2022 Calculator Project</div>
+            <div id="footer-credits" class="text-center text-success">Built with Bootstrap 5</div>
+        </footer>
+        
+        <!-- import scripts -->
+        <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
+        <script src="js/queries.js"></script>
+        <script src="js/access.js"></script>
+    </body>
+</html>
